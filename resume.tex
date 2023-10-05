@@ -1,0 +1,283 @@
+%-------------------------
+% Resume in Latex
+% Author : Aras Gungore
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    pdfpagemode=FullScreen,
+}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      % \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Vishnu Satish} \\ \vspace{3pt}
+    \small
+    \faAt \hspace{.5pt} \href{mailto: v3satish@uwaterloo.ca}{v3satish@uwaterloo.ca}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/vishnupsatish}{in/vishnupsatish}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/vishnupsatish}{vishnupsatish}
+    $|$
+    \faGlobe \hspace{.5pt} \href{https://www.vishnus.me}{vishnus.me}
+    $|$
+    \faMapMarker \hspace{.5pt} {Waterloo, Canada}
+\end{center}
+
+
+
+%----------- EDUCATION -----------
+
+\section{\faGraduationCap\:Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeEducationHeading
+      {University of Waterloo}
+      {Waterloo, Canada}
+      {Bachelor of Computer Science (Honours), co-op}
+      {September 2023 \textbf{--} April 2028}
+
+
+    \resumeItemListStart
+        \resumeItem{\textbf{Relevant coursework:} CS 145 (Advanced Functional Programming), MATH 145 (Advanced Algebra), MATH 137 (Honours Calculus 1)}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+
+%----------- SKILLS -----------
+
+\section{\faCode\:Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Languages:} {Python, C++, HTML, CSS, JavaScript, Ruby, Bash} \\ \vspace{3pt}
+        \textbf{Frameworks/Tools:} {Flask, React.js, Ruby on Rails, NativeScript, Cypress.js, Git, GitHub Actions, CircleCI} \\ \vspace{3pt}
+    }}
+  \resumeSubHeadingListEnd
+
+
+%----------- WORK EXPERIENCE -----------
+
+\section{\faBriefcase\:Work Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {BookJane} {Toronto, Canada}
+      {Software Engineering Intern} {July 2022 \textbf{--} August 2022}
+        \resumeItemListStart
+            \resumeItem{Engineered an end-to-end testing framework from scratch, \textbf{increasing UI test coverage from 15\% to 85\%}}
+            \resumeItem{Developed Ruby software to create mock data for \textbf{120+ healthcare worker and administrator profiles}}
+            \resumeItem{Architected Cypress.js programs that simulated \textbf{30+ real-world customer interactions} to detect bugs}
+            \resumeItem{Created CircleCI workflows that executed the test software daily, \textbf{saving 300+ hours} of manual testing yearly}
+            \resumeItem{Authored \textbf{extensive documentation} about the testing procedures and framework architecture}
+        \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Slang Labs} {Remote}
+    %   {Software Developer Intern} {December 2021 \textbf{--} March 2022}
+    %     \resumeItemListStart
+    %       \resumeItem{}
+    %     \resumeItemListEnd
+    
+    \resumeSubheading
+      {University of Waterloo} {Waterloo, Canada}
+      {Software Engineering Intern} {July 2021 \textbf{--} August 2022}
+        \resumeItemListStart
+            \resumeItem{Engineered an \textbf{information archive and modification framework} in Python for a research group}
+            \resumeItem{Designed and built the \textbf{official website} of the research group (\href{https://swag.uwaterloo.ca/members}{swag.uwaterloo.ca}) using Jinja2 (a templating language), Bootstrap, and \textbf{accessible design principles}}
+            \resumeItem{Analyzed and stored \textbf{500+ data points} (publications, members, etc.) in a \textbf{custom-made XML format}}
+            \resumeItem{Developed an interactive Python script that utilized \textbf{IEEE’s Xplore API} to streamline the process of storing \textbf{all 300+ publications} and their attributes in the framework}
+            \resumeItem{Created a \textbf{GitHub Actions workflow} that updated the data shown on the website \textbf{automatically} based on a change in the XML data, \textbf{reducing by 50\% the amount of time} to update the website}
+        \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+
+\section{\faTrophy\:Awards \& Achievements}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Hack The North Winner:}{ Created a \textbf{computer vision} customer analytics platform that won Best Use of Genesys, with a \$500 prize. (September 2023)} \\ \vspace{3pt}
+
+        \textbf{Canadian Computing Competition Senior Honour Roll:}{ Top 2\% and \textbf{top 90 out of 3500+ in Canada}, with a score of 48/75. Solved \textbf{difficult algorithmic problems} involving dynamic programming, graphs, etc. (February 2023)} \\ \vspace{3pt}
+    
+        \textbf{\$100k Schulich Leader Scholarship:}{ Offered most prestigious STEM scholarship in Canada at YorkU. (May 2023)} \\ \vspace{3pt}
+    }}
+  \resumeSubHeadingListEnd
+
+%----------- VOLUNTEERING -----------
+
+\section{\faGroup\:Leadership \& Volunteering}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {hack::peel} {Mississauga, Canada}
+      {Co-Founder \& Co-President} {February 2022 \textbf{--} January 2023}
+        \resumeItemListStart
+            \resumeItem{Lead, organized, and ran \textbf{Peel Region's largest hackathon}, with \textbf{120+ in-person participants}}
+            \resumeItem{Lead a \textbf{team of 15} alongside two peers, utilizing project management tools, like Trello, to effectively manage tasks}
+            \resumeItem{Through cold emailing, acquired \textbf{11 corporate sponsors} who provided \textbf{\$8,000}, along with other free items}
+            \resumeItem{Provided \textbf{\$1,000 in monetary prizes}, along with three free meals and free t-shirts to every participant}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {The Woodlands Secondary School Math Department} {Mississauga, Canada}
+      {Software Developer} {February 2021 \textbf{--} January 2022}
+        \resumeItemListStart
+            \resumeItem{Created two interactive software textbooks (originally created on Google Docs) for high school math courses that have been used by \textbf{three math classes} as the primary textbook, and \textbf{120+ students}}
+            \resumeItem{Parsed the books' HTML (from Google Docs) to deploy, manage, and maintain an interactive Flask application}
+            \resumeItem{Integrated Desmos and an \textbf{auto-save whiteboard} to help teachers \textbf{teach lessons during COVID}}
+        \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+% %----------- PROJECTS -----------
+
+% \section{Projects}
+%     \vspace{3pt}
+%     \resumeSubHeadingListStart
+      
+%       \resumeProjectHeading
+%         {\textbf{} $|$ \emph{\href{}{\color{blue}GitHub}}}{}
+%           \resumeItemListStart
+%             \resumeItem{}
+%           \resumeItemListEnd
+      
+%     \resumeSubHeadingListEnd
+
+\end{document}
